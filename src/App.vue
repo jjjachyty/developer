@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import { compiler } from "@/plugins/compiler";
-// import { deploy } from "@/plugins/deploy";
+import compiler from "@/assets/js/compiler";
+import { deploy } from "@/assets/js/deploy";
 
 export default {
   name: "App",
@@ -31,7 +31,7 @@ export default {
   created() {
     console.log("created start ");
     // 调用函数,第一个参数是你的合约文件地址，第二个参数是你的合约名，注意冒号不要省略
-     compiler("adoption.sol", ":Adoption");
+    // compiler("adoption.sol", ":Adoption");
     // deploy("adoption", "0xC05dEb0C5e841Aa564f41f769335BC96D75Ade65", "123456");
     console.log("created end");
   }

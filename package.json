@@ -1,38 +1,43 @@
 {
-  "name": "developer",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.2.0",
-    "core-js": "^2.6.5",
-    "graceful-fs": "^4.2.0",
-    "module": "^1.2.5",
-    "roboto-fontface": "*",
-    "solc": "^0.5.10",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3",
-    "vuetify": "^1.5.5",
-    "vuex": "^3.0.1",
-    "web3": "^1.0.0-beta.55"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-eslint": "^3.9.0",
-    "@vue/cli-service": "^3.9.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.1.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
-    "vue-cli-plugin-vuetify": "^0.5.0",
-    "vue-template-compiler": "^2.6.10",
-    "vuetify-loader": "^1.0.5"
-  }
+    "name": "developer",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "fix-memory-limit": "cross-env LIMIT=4096 increase-memory-limit"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.2.0",
+        "concat-stream": "^2.0.0",
+        "core-js": "^2.6.5",
+        "graceful-fs": "^4.2.0",
+        "module": "^1.2.5",
+        "roboto-fontface": "*",
+        "solc": "^0.5.10",
+        "truffle-hdwallet-provider": "^1.0.15",
+        "vue": "^2.6.10",
+        "vue-router": "^3.0.3",
+        "vuetify": "^1.5.5",
+        "vuex": "^3.0.1",
+        "web3": "^1.0.0-beta.55"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.9.0",
+        "@vue/cli-plugin-eslint": "^3.9.0",
+        "@vue/cli-service": "^3.9.0",
+        "babel-eslint": "^10.0.1",
+        "cross-env": "^5.2.0",
+        "eslint": "^5.16.0",
+        "increase-memory-limit": "^1.0.7",
+        "eslint-plugin-vue": "^5.0.0",
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.1.0",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.1",
+        "vue-cli-plugin-vuetify": "^0.5.0",
+        "vue-template-compiler": "^2.6.10",
+        "vuetify-loader": "^1.0.5"
+    }
 }
